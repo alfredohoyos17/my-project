@@ -7,20 +7,24 @@ function BlogPage() {
   }
   return (
     <>
-    <HeaderComponent></HeaderComponent>
-    <div>BlogPage</div>
-    <h1>FORMULARIO #01234</h1>
-    <form onSubmit={handlesubmit}>
-      <fieldset>
-      <label htmlFor="username ">Nombre</label>
-      <input type="text" id="username"/>
-      </fieldset>
-      <fieldset>
-      <label htmlFor="comentario">Comentario</label>
-      <input type="text" id="comentario" />
-      </fieldset>
-      <button>Enviar</button>
-    </form>
+      <HeaderComponent />
+      <div className="blog-container">
+        <div>BlogPage</div>
+        <h1>FORMULARIO INFORMATIVO</h1>
+        <div className="form-container">
+          <form onSubmit={handlesubmit}>
+            <div className="form-group">
+              <label htmlFor="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" />
+            </div>
+            <div className="form-group">
+              <label htmlFor="comentario">Comentario</label>
+              <input type="text" id="comentario" name="comentario" />
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
     </>
   )
 }

@@ -1,19 +1,112 @@
-.header{
-  background-color: blue;
-  color: white;
-  padding: 10px;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: #f4f6fb;
+}
 
-  .title{
-    text-align: center;
-  }
+.header {
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  color: #fff;
+  padding: 16px 32px;
+  box-shadow: 0 2px 12px rgba(30, 64, 175, 0.12);
+  margin-bottom: 24px;
+}
 
-  .link-list{
-    display: flex;
-    justify-content: space-around;
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
 
-    .link{
-      color: white;
-      text-decoration: none;
-    }
-  }
+.link-list {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 8px;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.link:hover {
+  background: #fff;
+  color: #1e40af;
+  box-shadow: 0 2px 8px rgba(30, 64, 175, 0.10);
+}
+
+#menu h2 {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 12px 0;
+  border-radius: 8px;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.form-container {
+  margin: 32px auto;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(30, 64, 175, 0.08);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.form-group label,
+.form-container label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #1e40af;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #bfc9da;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+
+.form-container button {
+  align-self: flex-end;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-container button:hover {
+  background: #1e40af;
 }
